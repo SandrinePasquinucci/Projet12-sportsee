@@ -1,12 +1,9 @@
 header {
-  height: auto;
-  width: auto;
-  background-color: #000;
   display: flex;
   align-items: center;
   padding: 20px 15px;
-  font-weight: 500;
   font-size: 24px;
+  background-color: black;
 }
 
 .header__logo {
@@ -31,5 +28,4 @@ ul {
 
 a {
   color: #fff;
-  text-decoration: none;
 }

@@ -1,0 +1,42 @@
+.toolbar {
+  background-color: black;
+  padding-bottom: 60px;
+  width: 117px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 10px;
+}
+.list-icon img {
+  margin: auto;
+  display: block;
+}
+
+.list-icon-item {
+  background-color: #fff;
+  border-radius: 6px;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container {
+  text-align: center;
+  font-size: 12px;
+  transform: rotate(270deg);
+  color: #fff;
+  padding-bottom: 5px;
+}
