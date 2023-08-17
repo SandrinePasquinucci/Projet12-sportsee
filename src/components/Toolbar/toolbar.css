@@ -2,10 +2,11 @@
   background-color: black;
   padding-bottom: 60px;
   width: 117px;
+  padding: 130px 0;
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  gap: 150px;
   align-items: center;
 }
 
@@ -35,8 +36,11 @@
 
 .text-container {
   text-align: center;
-  font-size: 12px;
   transform: rotate(270deg);
   color: #fff;
   padding-bottom: 5px;
+
+  /* Empecher le retour a la ligne */
+  /* https://www.zonecss.fr/faq/presentation-du-texte-avec-css.html */
+  white-space: nowrap;
 }
