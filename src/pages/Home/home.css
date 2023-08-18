@@ -1,3 +1,11 @@
 .home {
-  background-color: #fff;
+  position: absolute;
+  background-color: white;
+  left: 117px;
+  top: 100px;
+  padding: 50px;
+}
+
+.user {
+  color: red;
 }

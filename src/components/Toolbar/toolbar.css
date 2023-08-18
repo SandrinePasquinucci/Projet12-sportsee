@@ -2,12 +2,12 @@
   background-color: black;
   padding-bottom: 60px;
   width: 117px;
-  padding: 130px 0;
-
+  height: 1024px;
   display: flex;
   flex-direction: column;
-  gap: 150px;
+  gap: 300px;
   align-items: center;
+  position: relative;
 }
 
 .list-icon {
@@ -15,8 +15,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  gap: 10px;
+  padding-top: 150px;
+  gap: 20px;
 }
 .list-icon img {
   margin: auto;
