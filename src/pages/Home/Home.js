@@ -1,6 +1,6 @@
 import "./home.css";
 import { Link } from "react-router-dom";
-import data from "../../data/mockdata.json";
+
 import { useState } from "react";
 
 function Home() {
@@ -18,17 +18,21 @@ function Home() {
         <button onClick={changeName}>API</button>
       )}
       <p>Puis cliquez sur l'utilisateur de votre choix :</p>
-      {data.users.map((user) => (
-        <nav className="users__nav">
-          <ul>
-            <li>
-              <Link to={`/dashboard/${user.id}`} className="user">
-                {user.userInfos.firstName} {user.userInfos.lastName}
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      ))}
+
+      <nav className="users__nav">
+        <ul>
+          <li>
+            <Link to={`/dashboard/12`} className="user">
+              Karl Dovineau
+            </Link>
+          </li>
+          <li>
+            <Link to={`/dashboard/18`} className="user">
+              Cécilia Ratorez
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </section>
   );
 }
