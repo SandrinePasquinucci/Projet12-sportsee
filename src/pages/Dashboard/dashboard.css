@@ -20,6 +20,22 @@ ul {
 .dashboard {
   position: absolute;
   background-color: white;
-  left: 150px;
+  left: 200px;
   top: 110px;
+}
+
+.dashboard-title {
+  font-size: 48px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 5%;
+}
+
+.dashboard-name {
+  color: #ff0101;
+}
+
+.dashboard-message {
+  font-size: 18px;
 }
