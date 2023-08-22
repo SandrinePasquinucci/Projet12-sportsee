@@ -1,6 +1,6 @@
 import "./home.css";
-import { Link } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
+import SportSeeLogo from "../../assets/SportSeeLogo.png";
 import { useState } from "react";
 
 function Home() {
@@ -11,6 +11,9 @@ function Home() {
   }
   return (
     <section className="home">
+      <div className="header__logo">
+        <img src={SportSeeLogo} alt="SportSee" width={178} height={60} />
+      </div>
       <p>Selectionnez votre mode de connexion :</p>
       {isActive === false ? (
         <button onClick={changeName}>Mock</button>
@@ -22,14 +25,14 @@ function Home() {
       <nav className="users__nav">
         <ul>
           <li>
-            <Link to={`/dashboard/12`} className="user">
+            <NavLink to={`/dashboard/12`} className="user">
               Karl Dovineau
-            </Link>
+            </NavLink>
           </li>
           <li>
-            <Link to={`/dashboard/18`} className="user">
+            <NavLink to={`/dashboard/18`} className="user">
               Cécilia Ratorez
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>
