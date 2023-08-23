@@ -22,12 +22,13 @@ ul {
   background-color: white;
   left: 200px;
   top: 110px;
+  width: 90%;
 }
 
 .dashboard-title {
   font-size: 48px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: baseline;
   gap: 5%;
 }
@@ -38,4 +39,15 @@ ul {
 
 .dashboard-message {
   font-size: 18px;
+}
+
+.dashboard-graph {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2);
+  justify-content: space-between;
+  grid-template-areas:
+    "barchart barchart barchart cardinfo"
+    "linechart radarchart radialbarchart  cardinfo";
+  gap: 10px;
 }

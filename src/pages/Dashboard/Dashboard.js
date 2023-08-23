@@ -4,12 +4,16 @@ import Toolbar from "../../components/Toolbar/Toolbar";
 import { useParams } from "react-router-dom";
 import React, { useState } from "react";
 import { getUserInfos } from "../../utils/data.js";
+import Bar from "../../components/Bar/Bar.js";
+import Line from "../../components/Line/Line.js";
+import Radar from "../../components/Radar/Radar.js";
+import RadialBar from "../../components/RadialBar/RadialBar.js";
+import CardInfo from "../../components/CardInfo/CardInfo.js";
 
 export default function Dashboard(id) {
   const ID = useParams("id").id;
   const [Mock, setMock] = useState(false);
   const { data } = getUserInfos(Mock, ID);
-  console.log(data);
 
   return (
     <>
@@ -27,7 +31,7 @@ export default function Dashboard(id) {
               }}
               className={Mock ? "active" : null}
             >
-              {Mock ? "Données mockées" : "Données du Back-End"}
+              {Mock ? "Données mockées" : "Données Back-End"}
             </button>
           </div>
           <p className="dashboard-message">
@@ -36,6 +40,13 @@ export default function Dashboard(id) {
         </div>
         <div className="dashboard-activity">
           <h2>Activité quotidienne </h2>
+        </div>
+        <div className="dashboard-graph">
+          <Bar />
+          <Line />
+          <Radar />
+          <RadialBar />
+          <CardInfo Info={data.keyData} />
         </div>
       </section>
     </>

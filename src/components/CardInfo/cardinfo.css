@@ -1,0 +1,28 @@
+.cardinfo {
+  grid-area: cardinfo;
+  display: flex;
+  flex-direction: column;
+
+  gap: 3%;
+}
+
+.cardinfo-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10%;
+  background-color: grey;
+}
+
+.cardinfo-item img {
+  width: 60px;
+  height: 60px;
+}
+
+.item-valeur {
+  font-size: 20px;
+}
+
+.item-titre {
+  font-size: 14px;
+}
