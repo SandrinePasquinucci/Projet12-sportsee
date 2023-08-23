@@ -17,22 +17,26 @@ export default function Dashboard(id) {
       <Toolbar />
 
       <section className="dashboard">
-        <div className="dashboard-title">
-          <h1>Bonjour </h1>
-          <span className="dashboard-name">{data.userInfos.firstName}</span>
-          <button
-            onClick={() => {
-              setMock(!Mock);
-            }}
-            className={Mock ? "active" : null}
-          >
-            {Mock ? "Données mockées" : "Données du Back-End"}
-          </button>
+        <div className="dashboard-banniere">
+          <div className="dashboard-title">
+            <h1>Bonjour </h1>
+            <span className="dashboard-name">{data.userInfos.firstName}</span>
+            <button
+              onClick={() => {
+                setMock(!Mock);
+              }}
+              className={Mock ? "active" : null}
+            >
+              {Mock ? "Données mockées" : "Données du Back-End"}
+            </button>
+          </div>
+          <p className="dashboard-message">
+            Félicitations ! Vous avez explosé vos objectifs hier 👏
+          </p>
         </div>
-
-        <p className="dashboard-message">
-          Félicitations ! Vous avez explosé vos objectifs hier 👏
-        </p>
+        <div className="dashboard-activity">
+          <h2>Activité quotidienne </h2>
+        </div>
       </section>
     </>
   );
