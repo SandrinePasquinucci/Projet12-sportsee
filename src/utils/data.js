@@ -8,13 +8,6 @@ export function getUserInfos(Mock, ID) {
       : `http://localhost:3000/user/${ID}`
   );
   const user = new UserInfos(data);
+  console.log(data);
   return { data: user, isLoading, isError };
 }
-
-// export function getUserInfos(ID) {
-//   const { data, isLoading, isError } = UseFetch(
-//     `http://localhost:3000/user/${ID}`
-//   );
-//   const user = new UserInfos(data);
-//   return { data: user, isLoading, isError };
-// }
