@@ -1,4 +1,32 @@
-.radialbar {
-  background-color: pink;
+.radial {
   grid-area: radialbarchart;
+  position: relative;
+  background-color: #fbfbfb;
+  padding: 15px;
+  /* margin: 15px; */
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.radial-title {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 10px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 24px;
+  color: #20253a;
+}
+
+.legend {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.legend__titre {
+  font-size: 26px;
+  font-weight: bold;
 }

@@ -6,7 +6,7 @@ import React, { useState } from "react";
 import { getUserInfos } from "../../utils/data.js";
 import Bar from "../../components/Bar/Bar.js";
 import Line from "../../components/Line/Line.js";
-import Radar from "../../components/Radar/Radar.js";
+import RadarPerf from "../../components/Radar/Radar.js";
 import RadialBar from "../../components/RadialBar/RadialBar.js";
 import CardInfo from "../../components/CardInfo/CardInfo.js";
 
@@ -14,6 +14,8 @@ export default function Dashboard(id) {
   const ID = useParams("id").id;
   const [Mock, setMock] = useState(false);
   const { data } = getUserInfos(Mock, ID);
+
+  const todayScore = data.todayScore ? data.todayScore * 100 : data.score * 100;
 
   return (
     <>
@@ -38,14 +40,12 @@ export default function Dashboard(id) {
             Félicitations ! Vous avez explosé vos objectifs hier 👏
           </p>
         </div>
-        <div className="dashboard-activity">
-          <h2>Activité quotidienne </h2>
-        </div>
+
         <div className="dashboard-graph">
-          <Bar />
-          <Line />
-          <Radar />
-          <RadialBar />
+          <Bar user={id} />
+          <Line user={id} />
+          <RadarPerf user={id} />
+          <RadialBar Info={todayScore} />
           <CardInfo Info={data.keyData} />
         </div>
       </section>

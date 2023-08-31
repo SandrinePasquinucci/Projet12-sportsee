@@ -1,38 +1,32 @@
 import "./home.css";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import SportSeeLogo from "../../assets/SportSeeLogo.png";
-// import { useState } from "react";
-
+import { Link } from "react-router-dom";
 function Home() {
-  // const [isActive, setIsActive] = useState(false);
-
-  // function changeName() {
-  //   setIsActive(!isActive);
-  // }
   return (
     <section className="home">
       <div className="header-logo">
         <img src={SportSeeLogo} alt="SportSee" width={178} height={60} />
       </div>
-      {/* <p>Selectionnez votre mode de connexion :</p>
-      {isActive === false ? (
-        <button onClick={changeName}>Mock</button>
-      ) : (
-        <button onClick={changeName}>API</button>
-      )} */}
-      {/* <p>Puis cliquez sur l'utilisateur de votre choix :</p> */}
+
       <p>Cliquez sur l'utilisateur de votre choix :</p>
       <nav className="users-nav">
         <ul>
           <li>
-            <NavLink to={`/dashboard/12`} className="user">
+            {/* <NavLink to={`/dashboard/12`} className="user">
               Karl Dovineau
-            </NavLink>
+            </NavLink> */}
+            <Link to={`dashboard/12`} className="user">
+              Karl Dovineau
+            </Link>
           </li>
           <li>
-            <NavLink to={`/dashboard/18`} className="user">
+            {/* <NavLink to={`/dashboard/18`} className="user">
               Cécilia Ratorez
-            </NavLink>
+            </NavLink> */}
+            <Link to={`dashboard/18`} className="user">
+              Cécilia Ratorez
+            </Link>
           </li>
         </ul>
       </nav>

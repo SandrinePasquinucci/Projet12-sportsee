@@ -2,8 +2,8 @@
   grid-area: cardinfo;
   display: flex;
   flex-direction: column;
-
-  gap: 3%;
+  gap: 35px;
+  /* height: 100%; */
 }
 
 .cardinfo-item {
@@ -11,18 +11,22 @@
   flex-direction: row;
   align-items: center;
   gap: 10%;
-  background-color: grey;
+  background-color: #fbfbfb;
 }
 
 .cardinfo-item img {
   width: 60px;
   height: 60px;
+  margin-left: 15px;
 }
 
 .item-valeur {
   font-size: 20px;
+  font-weight: 700;
 }
 
 .item-titre {
   font-size: 14px;
+  color: #74798c;
+  margin-top: -10px;
 }

@@ -1,4 +1,8 @@
 .radar {
-  background-color: yellow;
+  background-color: #282d30;
   grid-area: radarchart;
+  padding: 15px;
+  /* margin: 15px; */
+  border-radius: 5px;
+  font-size: 14px;
 }

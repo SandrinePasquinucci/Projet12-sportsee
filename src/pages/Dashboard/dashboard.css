@@ -39,15 +39,17 @@ ul {
 
 .dashboard-message {
   font-size: 18px;
+  font-weight: 400;
 }
 
 .dashboard-graph {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2);
+  grid-template-columns: (4);
+  grid-template-rows: 2;
   justify-content: space-between;
   grid-template-areas:
     "barchart barchart barchart cardinfo"
-    "linechart radarchart radialbarchart  cardinfo";
+    "linechart radarchart radialbarchart cardinfo";
+
   gap: 10px;
 }

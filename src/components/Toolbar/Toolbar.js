@@ -1,8 +1,8 @@
 import "./toolbar.css";
-import YogaIcon from "../../assets/yoga-icon.svg";
-import SwimmingIcon from "../../assets/swimming-icon.svg";
-import BikeIcon from "../../assets/bike-icon.svg";
-import DumbbellIcon from "../../assets/dumbbell-icon.svg";
+import YogaIcon from "../../assets/yoga.png";
+import SwimmingIcon from "../../assets/natation.png";
+import BikeIcon from "../../assets/velo.png";
+import DumbbellIcon from "../../assets/haltere.png";
 
 function Toolbar() {
   return (
