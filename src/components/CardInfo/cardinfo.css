@@ -2,13 +2,14 @@
   grid-area: cardinfo;
   display: flex;
   flex-direction: column;
-  gap: 35px;
-  /* height: 100%; */
+  gap: 45px;
+  margin-right: 60px;
+  padding-right: 20px;
 }
 
 .cardinfo-item {
   display: flex;
-  flex-direction: row;
+
   align-items: center;
   gap: 10%;
   background-color: #fbfbfb;

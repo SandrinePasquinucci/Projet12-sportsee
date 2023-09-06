@@ -20,8 +20,8 @@ ul {
 .dashboard {
   position: absolute;
   background-color: white;
-  left: 200px;
-  top: 110px;
+  left: 150px;
+  top: 100px;
   width: 90%;
 }
 
@@ -40,12 +40,12 @@ ul {
 .dashboard-message {
   font-size: 18px;
   font-weight: 400;
+  margin-top: -30px;
 }
 
 .dashboard-graph {
   display: grid;
-  grid-template-columns: (4);
-  grid-template-rows: 2;
+
   justify-content: space-between;
   grid-template-areas:
     "barchart barchart barchart cardinfo"

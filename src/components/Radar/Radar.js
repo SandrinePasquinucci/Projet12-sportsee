@@ -32,19 +32,31 @@ export default function RadarPerf(id) {
   return (
     <>
       <div className="radar">
-        <ResponsiveContainer width={"100%"} height={263}>
-          <RadarChart data={dataFormated}>
-            <PolarGrid stroke="#fff" />
-            <PolarAngleAxis dataKey="kind" tick={{ fill: "#fff" }} />
-            <PolarRadiusAxis angle={30} domain={[0, 150]} tick={false} />
-            <Radar
-              dataKey="value"
-              stroke="#FF0101"
-              fill="#FF0101"
-              fillOpacity={0.7}
-            />
-          </RadarChart>
-        </ResponsiveContainer>
+        <RadarChart
+          outerRadius={80}
+          width={260}
+          height={263}
+          data={dataFormated}
+          style={{
+            color: "#000",
+
+            borderRadius: "5px",
+          }}
+        >
+          <PolarGrid />
+          <PolarAngleAxis
+            dataKey="kind"
+            tick={{ fontSize: "12px", fontWeigth: 500, fill: "#FFF" }}
+          />
+          <Radar
+            name="Performance"
+            dataKey="value"
+            fillOpacity={0.7}
+            stroke="#FF0101"
+            fill="#FF0101"
+            margin={{ left: 5, right: 5 }}
+          />
+        </RadarChart>
       </div>
     </>
   );

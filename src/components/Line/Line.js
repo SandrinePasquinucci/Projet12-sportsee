@@ -36,12 +36,7 @@ export default function Lin(id) {
     <div className="lin">
       <h3 className="lin-title">Durée moyenne des sessions</h3>
 
-      <LineChart
-        data={dataFormated}
-        width={300}
-        height={273}
-        margin={{ top: 5, right: 30, left: 20, bottom: 5 }}
-      >
+      <LineChart data={dataFormated} width={250} height={200}>
         <XAxis
           dataKey="day"
           tickLine={false}
